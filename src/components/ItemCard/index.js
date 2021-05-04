@@ -17,7 +17,7 @@ export default function ItemCard ({ product, up, down }){
       </View>
       <View style={styles.productInfo}>
         <Text style={styles.productName}>{product.name}</Text>
-        <Text style={styles.productPrice}>{product.price}</Text>
+        <Text style={styles.productPrice}>R$ {product.price}.00</Text>
       </View>
       <View style={styles.productButtons}>
       <TouchableOpacity style={[styles.button, styles.editButton]} onPress={() => up()}>
